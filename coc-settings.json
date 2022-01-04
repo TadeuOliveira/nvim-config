@@ -1,0 +1,19 @@
+{
+	"phpactor.enable": true,
+	"phpactor.path": "/home/usuario/dev/phpactor/bin/phpactor",
+	"tsserver.enable": true,
+	"eslint.enable": true,
+	"languageserver": {
+		"phpactor": {
+			"command": "phpactor",
+			"args": ["language-server"],
+			"trace.server": "verbose",
+			"filetypes": ["php"]
+		},
+		"clangd": {
+			"command": "clangd-12",
+			"rootPatterns": ["compile_flags.txt", "compile_commands.json"],
+			"filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"]
+		}
+	}
+}
